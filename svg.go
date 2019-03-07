@@ -240,7 +240,7 @@ func (svg *SVG) Marker(id string, x, y, width, height int, s ...string) {
 		id, x, y, width, height, endstyle(s, ">\n"))
 }
 
-// MarkEnd ends a marker
+// MarkerEnd: ends a marker
 func (svg *SVG) MarkerEnd() { svg.println(`</marker>`) }
 
 // Pattern defines a pattern with the specified dimensions.
